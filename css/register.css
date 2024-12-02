@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ee5995, #421829);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.register-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.register-box input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    justify-content: flex-start;
+}
+
+.checkbox label {
+    margin: 0;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.btn {
+    background: linear-gradient(to bottom, #a83d68, #421829);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-box p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+.register-box p a {
+    text-decoration: none;
+    color: #421829;
+}

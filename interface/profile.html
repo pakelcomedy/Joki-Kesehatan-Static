@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Profile Saya</title>
+  <!-- Link ke file CSS -->
+  <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="../img/polije.png" alt="Logo Politeknik Negeri Jember">
+    </div>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Artikel</a>
+      <a href="#">Konsultasi</a>
+      <div class="profile-menu">
+        <img src="../img/Foto Profile.png" alt="Profile Picture">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Kontainer Utama -->
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="#" class="active">Profile Saya</a>
+      <a href="#">Artikel</a>
+      <a href="#">Konsultasi</a>
+      <button id="logoutButton">Log Out</button>
+    </aside>
+
+    <!-- Konten Profil -->
+    <section class="profile-content">
+      <div class="profile-header">
+        <img src="../img/Foto Profile.png" alt="Avatar">
+        <div>
+          <h2 id="name">Faris Eka</h2>
+          <p id="status">Pejuang Sehat</p>
+        </div>
+        <button class="edit-button">Edit Profile</button>
+      </div>
+
+      <div class="profile-details">
+        <div>
+          <span>Umur</span>
+          <strong id="age">25</strong>
+        </div>
+        <div>
+          <span>Tinggi Badan</span>
+          <strong id="height">173 cm</strong>
+        </div>
+        <div>
+          <span>Berat Badan</span>
+          <strong id="weight">65 kg</strong>
+        </div>
+        <div>
+          <span>Jenis Kelamin</span>
+          <strong id="gender">Laki - Laki</strong>
+        </div>
+        <div>
+          <span>Status Kesehatan</span>
+          <strong id="healthStatus">Pasien Asma</strong>
+        </div>
+        <div>
+          <span>Alamat</span>
+          <strong id="address">Jl. Raya 16, Desa Kaliwates, Kecamatan Kaliwates, Kabupaten Jember</strong>
+        </div>
+        <div>
+          <span>Nomor Handphone</span>
+          <strong id="phone">0823656461628612</strong>
+        </div>
+        <div>
+          <span>Email</span>
+          <strong id="email">fariseka1234@gmail.com</strong>
+        </div>
+      </div>
+    </section>
+  </div>
+
+ <!-- Pop-up Edit Profil -->
+<div class="popup-overlay" style="display: none;">
+  <div class="popup-container">
+    <button class="close-btn" onclick="closePopup()">X</button>
+    <h2>Edit Profil</h2>
+    <form id="editProfileForm">
+      <label for="firstName">Nama Depan</label>
+      <input type="text" id="firstName" value="Faris" required>
+
+      <label for="lastName">Nama Belakang</label>
+      <input type="text" id="lastName" value="Eka" required>
+
+      <label for="birthDate">Tanggal Lahir</label>
+      <input type="date" id="birthDate" value="1998-02-28" required>
+
+      <label for="height">Tinggi Badan (cm)</label>
+      <input type="number" id="height" value="171" required>
+
+      <label for="weight">Berat Badan (kg)</label>
+      <input type="number" id="weight" value="65" required>
+
+      <label>Jenis Kelamin</label>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="gender" value="Laki-laki" checked>
+          Laki-laki
+        </label>
+        <label>
+          <input type="radio" name="gender" value="Perempuan">
+          Perempuan
+        </label>
+      </div>
+
+      <label for="healthStatus">Status Kesehatan</label>
+      <input type="text" id="healthStatus" value="Pasien penyakit Asma" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" value="Fariseka1234@gmail.com" required>
+
+      <button type="submit">Simpan</button>
+    </form>
+  </div>
+</div>
+
+  <!-- Memanggil file JavaScript -->
+  <script src="../js/profile.js"></script>
+</body>
+</html>

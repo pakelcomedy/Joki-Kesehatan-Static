@@ -1,0 +1,342 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(to right, #A73D67, #461A2B);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #A73D67;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #A73D67;
+}
+
+header nav .profile-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header nav .profile-menu img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #A73D67;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  margin: 40px auto;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #ffffff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+  display: block;
+  margin: 15px 0;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-left: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  color: #A73D67;
+  border-left: 3px solid #A73D67;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #A73D67;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+  background: #732849;
+}
+
+/* Profile Section */
+.profile-content {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #A73D67;
+  position: relative;
+}
+
+.profile-header img:hover {
+  cursor: pointer;
+}
+
+.profile-header h2 {
+  font-size: 20px;
+  color: #461A2B;
+}
+
+.profile-header p {
+  font-size: 14px;
+  color: #777;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.profile-details div {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.profile-details div:last-child {
+  border-bottom: none;
+}
+
+.profile-details span {
+  display: block;
+  font-size: 14px;
+  color: #777;
+}
+
+.profile-details strong {
+  font-size: 16px;
+  color: #461A2B;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.profile-actions button {
+  padding: 10px 20px;
+  background: #A73D67;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.profile-actions button:hover {
+  background: #732849;
+}
+
+/* Gaya untuk tombol Edit Profile */
+.edit-button {
+  padding: 10px 20px;
+  background-color: #A73D67;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.edit-button:hover {
+  background-color: #461A2B;
+  transform: translateY(-3px);
+}
+
+.edit-button:focus {
+  outline: none;
+}
+
+.edit-button:active {
+  transform: translateY(1px);
+}
+
+/* Gaya dasar untuk pop-up */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparansi hitam */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Pastikan selalu di atas */
+}
+
+/* Popup container styles */
+.popup-container {
+  background: rgba(255, 255, 255, 0.85); /* Latar putih transparan */
+  backdrop-filter: blur(10px); /* Efek blur */
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Shadow */
+  width: 500px;
+  max-width: 90%;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tombol tutup (X) */
+.popup-container .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Gaya form di dalam pop-up */
+.popup-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup-container form label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popup-container form input[type="text"],
+.popup-container form input[type="email"],
+.popup-container form input[type="number"],
+.popup-container form input[type="date"] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  padding: 5px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.popup-container form input[type="text"]:focus,
+.popup-container form input[type="email"]:focus,
+.popup-container form input[type="number"]:focus,
+.popup-container form input[type="date"]:focus {
+  border-bottom: 1px solid #c63a7c;
+}
+
+/* Radio buttons */
+.popup-container form .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.popup-container form .radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.popup-container form .radio-group input[type="radio"] {
+  margin: 0;
+  accent-color: #c63a7c;
+}
+
+/* Tombol simpan */
+.popup-container form button {
+  margin-top: 20px;
+  background-color: #c63a7c;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-container form button:hover {
+  background-color: #a12e63;
+}
