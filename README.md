@@ -1,4 +1,4 @@
-## Deskripsi Proyek
+## Ingin mencoba jadi penjoki handal tapi terlalu malas
 
 Ini adalah website static sederhana dengan desain menggunakan HTML, CSS dan JS. Halaman ini punya berbagai komponen seperti header dengan navigasi, sidebar, bagian profil, dan popup buat edit profil. Desainnya pakai warna yang elegan dan kontras, plus ada animasi dan efek hover yang bikin interaksi jadi lebih menarik.
 
@@ -14,10 +14,6 @@ Cara pake template ini gampang banget:
 2. Sesuaikan isi HTML sesuai kebutuhan kamu.
 3. Gaya dan interaksi udah diatur di CSS, tinggal dipakai aja.
 4. Kalau mau coba popup atau elemen interaktif lainnya, buka aja file HTML di browser dan lihat hasilnya.
-
-## Kenapa Pakai Desain Ini?
-
-Project ini cocok banget buat kamu yang pengen punya website keren dan mudah dipakai. Bahkan kalau **ingin coba jadi penjoki handal tapi terlalu malas** untuk bikin dari awal.
 
 ## Kontribusi
 
